@@ -1,34 +1,10 @@
-const btnMenuAtivar = document.querySelector("#btnAtivar");
+const btnAtivarMenu = document.querySelector(".btn-menu");
 
-const verificaWidth = () => {
-    let width = window.innerWidth;
-    if(width <= 992) {
-        console.log('caac')
-        const menuH3 = document.querySelectorAll('.h3-nav');
-
-        menuH3.forEach((e, i)=> {
-            e.addEventListener('click', ()=> {
-                const headerDrop = document.querySelectorAll('.header-dropdown-menu');
-                headerDrop[i].classList.toggle('ativar-menu-dropdown');
-                console.log('caac');
-            })
-        }) 
-    }
-}
-
-window.addEventListener('resize', ()=> {
-    verificaWidth()
-})
-
-window.addEventListener('load', function() {
-    verificaWidth()
+btnAtivarMenu.addEventListener('click', ()=> {
+    const menu = document.querySelectorAll('.header-dropdown-menu');
+    menu[3].classList.toggle('ativar-menu');
+    console.log(btnAtivarMenu)
 });
-
-btnMenuAtivar.addEventListener('click', ()=> {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('ativar-menu')
-}) 
-
 
 
 
