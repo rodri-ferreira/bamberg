@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import '/css/header.css';
+
+:root {
+    --azul-escuro: rgb(2, 32, 47);
+    --branco: #ffffff;
+    --preto: #010101;
+    --ouro: #DBBF74;
+    --azul-claro: #02377c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    color: var(--branco);
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a {
+    color: var(--branco);
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+* {
+scrollbar-width: auto;
+scrollbar-color: rgb(2, 32, 47) #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: rgb(2, 32, 47);
+border-radius: 10px;
+border: 3px solid #ffffff;
+}
