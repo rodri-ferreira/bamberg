@@ -1,0 +1,109 @@
+article {
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    
+}
+
+.article-carrossel {
+    width: 750px;
+    border: 1px solid;
+}
+
+.article-carrossel img {
+    display: block;
+    width: 750px;
+}
+
+aside {
+    width: 400px;
+}
+
+.aside-infos{
+    -webkit-box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: 20px;
+}
+
+.aside-infos h2 {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.aside-infos h1 {
+    margin-bottom: 30px;
+}
+
+.infos-comodos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.infos-precos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p-infos {
+    font-size: 26px;
+}
+
+.p-infos-precos {
+    font-size: 20px;
+}
+
+.preco {
+    font-size: 30px;
+}
+
+.numero-infos {
+    color: var(--azul-claro);
+}
+
+.dimencao-casa {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.dimencao-casa div {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    padding: 30px;
+}
+
+.aside-btns {
+    margin-top: 20px;
+    width: 400px;
+    display: grid;
+    gap: 10px;
+    position: absolute;
+}
+
+.btn-contatos {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid var(--azul-claro);
+    background-color: transparent;
+}
+
+.btn-contatos:hover {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+}
+
+.btn-contatos:last-child {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+}
+
