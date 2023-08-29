@@ -1,3 +1,8 @@
+main {
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+
 article {
     width: 100%;
     max-width: 1400px;
@@ -5,12 +10,13 @@ article {
     display: flex;
     align-items: start;
     justify-content: space-evenly;
-    
+    position: relative;
+    z-index: 1;
 }
 
 .article-carrossel {
     width: 750px;
-    border: 1px solid;
+    margin-bottom: 50px;
 }
 
 .article-carrossel img {
@@ -28,15 +34,17 @@ aside {
     box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
     border: 1px solid rgba(0, 0, 0, 0.212);
     padding: 20px;
+    
 }
 
 .aside-infos h2 {
     margin-bottom: 5px;
     padding: 0;
+    color: var(--ouro);
 }
 
 .aside-infos h1 {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .infos-comodos {
@@ -53,15 +61,16 @@ aside {
 }
 
 .p-infos {
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .p-infos-precos {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .preco {
     font-size: 30px;
+    font-weight: bold;
 }
 
 .numero-infos {
@@ -70,15 +79,19 @@ aside {
 
 .dimencao-casa {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .dimencao-casa div {
-    background-color: var(--azul-claro);
-    color: var(--branco);
-    padding: 30px;
+    padding: 0px;
 }
+
+.dimencao-casa div p {
+    margin: 0;
+    color: var(--preto);
+}   
 
 .aside-btns {
     margin-top: 20px;
@@ -106,4 +119,166 @@ aside {
     background-color: var(--azul-claro);
     color: var(--branco);
 }
+
+.financiamento {
+    width: 400px;
+    background-color: var(--cinza-claro);
+    position: static;
+    margin-top: 110px;
+    padding: 20px;
+}
+
+.financiamento h2, p{
+    text-align: center;
+    color: var(--azul-escuro);
+    margin-bottom: 15px;
+}
+
+.financiamento button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: var(--ouro);
+    border: none;
+    cursor: pointer;
+}
+
+.descricao-casa {
+    width: 750px;
+}
+
+.descricao-casa h2{
+    color: var(--ouro);
+    margin-bottom: 20px;
+}
+
+.descricao-casa p {
+    text-align: left;
+
+}
+
+@media (max-width: 1200px) {
+    .article-carrossel {
+        width: 600px;
+    }
+
+    .article-carrossel img {
+        width: 600px;
+    }
+
+    aside {
+        width: 350px;
+    }
+
+    .aside-btns {
+        width: 350px;
+    }
+
+    .financiamento {
+        width: 350px;
+    }
+
+    .descricao-casa {
+        width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .article {
+        flex-direction: column;
+    }
+
+    .descricao-casa {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 90%;
+        align-self: flex-start;
+        top: 102%;
+    }
+    .descricao-casa p, h2 {
+        text-align: justify;
+    }
+    
+    .article-carrossel {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .article-carrossel img {
+        display: block;
+        width: 100%;
+    }
+
+    .aside-infos, .aside-btns, .financiamento {
+        width: 90%;
+    }
+
+    .aside-btns{
+        margin: initial auto;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .financiamento {
+        margin: 110px auto;
+        margin-bottom: 0;
+    }
+
+    .aside-infos {
+        border: none;
+        box-shadow: none;
+    }
+
+    aside {
+        padding-top: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .infos-comodos {
+        display: inline-flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .infos-precos {
+        gap: 0;
+    }
+
+    .p-infos {
+        font-size: 16px;
+    }
+
+    .p-infos-precos {
+        text-align: left;
+    }
+
+    .preco {
+        text-align: left;
+    }
+
+    .dimencao-casa {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+     .article {
+        flex-direction: column;
+    }
+
+    .descricao-casa {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 90%;
+        top: 102%;
+    }
+    .descricao-casa p, h2 {
+        text-align: justify;
+    } 
+}
+
 
