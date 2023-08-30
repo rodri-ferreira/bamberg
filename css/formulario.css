@@ -1,0 +1,27 @@
+.formulario-mobile {
+    background-color: var(--azul-claro);
+    /* width: 90%; */
+    width: 100%;
+    padding: 20px 10px;
+    margin: 20px auto;
+    display: none;   
+}
+
+.formulario-mobile input {
+    height: 25px;
+    padding: 0 5px;
+}
+
+.btn-form {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+    .formulario-mobile {
+        display: grid;
+        gap: 10px;
+    }
+}

@@ -1,47 +1,59 @@
-.detalhes-unidade {
+.detalhes-casa {
+    margin-top: 20px;
+    /* border: 1px solid red; */
+}
+
+.detalhes-casa h2 {
+    color: var(--ouro);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.detalhes-div, .detalhes-div-condominio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    /* align-items: center;  */
+}
+
+.detalhes-list {
+    list-style: disc;
+}
+
+.detalhes-list li {
+    padding: 3px 0;
+    font-weight: 200;
+    color: #050505;
+    font-size: 14px;
+}
+
+.btn-ver-condominio {
     width: 100%;
-    height: 100px;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
+    margin-bottom: 10px;
+    border: none;
+    background-color: var(--branco);
+    cursor: pointer;
 }
 
-.detalhes {
-    width: 750px;
-    height: 100px;
-    margin-top: -30px;
-}
-
-.detalhes-2 {
-    width: 400px;
+.detalhes-div-condominio {
     height: 0;
+    overflow: hidden;
 }
 
-
-@media (max-width: 1200px) {
-    .detalhes {
-        width: 600px;
-        margin-top: -70px;
-    }
-
-    .detalhes-2 {
-        width: 350px;
-    }
+.ativar-detalhes {
+    height: auto;
+    padding: 10px 0;
 }
 
 @media (max-width: 992px) {
-    .detalhes-unidade{
-        position: relative;
-    }
-
-    .detalhes {
-        position: static;
-        top: 50%;
+    .detalhes-casa {
         width: 90%;
+        margin: 20px auto;
     }
+}
 
-    .detalhes-2 {
-        display: none;
+@media (max-width: 768px) {
+    .detalhes-div, .detalhes-div-condominio {
+        grid-template-columns: 1fr 1fr;
     }
 }

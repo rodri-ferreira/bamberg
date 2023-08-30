@@ -2,6 +2,8 @@
 @import 'header.css';
 @import 'article.css';
 @import 'detalhes-unidade.css';
+@import 'pontos-referencia.css';
+@import 'formulario.css';
 
 :root {
     --azul-escuro: rgb(2, 32, 47);
@@ -28,6 +30,17 @@ h3 {
 
 a {
     color: var(--branco);
+}
+
+p {
+    /* letter-spacing: 1px; */
+    line-height: 22px;
+}
+
+.personalizado-h2 {
+    color: var(--ouro);
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 /* ===== Scrollbar CSS ===== */

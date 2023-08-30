@@ -1,7 +1,7 @@
 .secao-site {
     max-width: 1400px; 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 20px auto;
 }
 
@@ -37,16 +37,20 @@ main {
 
 aside {
     width: 400px;
-    height: 790px;
+    height: 730px;
+    position: sticky;
+    top: 15px;
+
 }
 
 .aside-infos{
-    -webkit-box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 1px #00000021;
+    /* -webkit-box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
-    border: 1px solid rgba(0, 0, 0, 0.212);
+    box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75); */
+    /* border: 1px solid rgba(0, 0, 0, 0.212); */
     border-radius: 5px;
-    padding: 20px;   
+    padding: 10px;   
 }
 
 .aside-infos h2 {
@@ -133,11 +137,12 @@ aside {
 }
 
 .financiamento {
+    box-shadow: 0px 0px 1px 1px #00000021;
     width: 400px;
     background-color: var(--cinza-claro);
     position: static;
     margin-top: 20px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
 }
 
