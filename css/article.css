@@ -1,17 +1,14 @@
-main {
+.secao-site {
     max-width: 1400px; 
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
 }
 
-article {
-    width: 100%;
-    max-width: 1400px;
-    margin: 20px auto;
-    display: flex;
-    align-items: start;
-    justify-content: space-evenly;
-    position: relative;
-    z-index: 1;
+main {
+    display: flex; 
+    flex-direction: column;
+    width: 750px;
 }
 
 .article-carrossel {
@@ -24,8 +21,23 @@ article {
     width: 750px;
 }
 
+.descricao-casa {
+    width: 750px;
+}
+
+.descricao-casa h2{
+    color: var(--ouro);
+    margin-bottom: 20px;
+}
+
+.descricao-casa p {
+    text-align: left;
+
+}
+
 aside {
     width: 400px;
+    height: 790px;
 }
 
 .aside-infos{
@@ -33,8 +45,8 @@ aside {
     -moz-box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
     border: 1px solid rgba(0, 0, 0, 0.212);
-    padding: 20px;
-    
+    border-radius: 5px;
+    padding: 20px;   
 }
 
 .aside-infos h2 {
@@ -91,20 +103,20 @@ aside {
 .dimencao-casa div p {
     margin: 0;
     color: var(--preto);
-}   
+}  
 
 .aside-btns {
     margin-top: 20px;
     width: 400px;
     display: grid;
     gap: 10px;
-    position: absolute;
 }
 
 .btn-contatos {
     display: block;
     width: 100%;
-    padding: 5px;
+    padding: 10px 0;
+    border-radius: 5px;
     cursor: pointer;
     border: 1px solid var(--azul-claro);
     background-color: transparent;
@@ -124,8 +136,9 @@ aside {
     width: 400px;
     background-color: var(--cinza-claro);
     position: static;
-    margin-top: 110px;
+    margin-top: 20px;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .financiamento h2, p{
@@ -137,27 +150,18 @@ aside {
 .financiamento button {
     display: block;
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 5px;
     background-color: var(--ouro);
     border: none;
     cursor: pointer;
 }
 
-.descricao-casa {
-    width: 750px;
-}
-
-.descricao-casa h2{
-    color: var(--ouro);
-    margin-bottom: 20px;
-}
-
-.descricao-casa p {
-    text-align: left;
-
-}
-
 @media (max-width: 1200px) {
+    main {
+        width: 600px;
+    }
+
     .article-carrossel {
         width: 600px;
     }
@@ -184,17 +188,43 @@ aside {
 }
 
 @media (max-width: 992px) {
-    .article {
+    main{
+        width: 100%;
+    }
+
+    .img-descricao-texto {
+        display: flex;
         flex-direction: column;
+        gap: 620px;
+    }
+
+    aside {
+        position: absolute;
+        height: 620px;
+        top: 510px;
+        margin: 0 auto;
+    }
+
+    .aside-infos {
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .article-carrossel {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .article-carrossel img {
+        display: block;
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
     }
 
     .descricao-casa {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
         width: 90%;
-        align-self: flex-start;
-        top: 102%;
+        margin: 0 auto;
     }
     .descricao-casa p, h2 {
         text-align: justify;
@@ -215,13 +245,11 @@ aside {
     }
 
     .aside-btns{
-        margin: initial auto;
-        left: 50%;
-        transform: translate(-50%);
+        margin: 0 auto;
     }
 
     .financiamento {
-        margin: 110px auto;
+        margin: 10px auto;
         margin-bottom: 0;
     }
 
@@ -264,21 +292,33 @@ aside {
     }
 }
 
+
 @media (max-width: 768px) {
-     .article {
-        flex-direction: column;
+    aside {
+        top: 440px;
     }
 
-    .descricao-casa {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        width: 90%;
-        top: 102%;
+    .img-descricao-texto {
+        gap: 620px;
     }
-    .descricao-casa p, h2 {
-        text-align: justify;
-    } 
-}
 
+   .article-carrossel {
+        width: 100%;
+        margin-bottom: 0;
+    }
 
+    .article-carrossel img {
+        display: block;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+
+   .descricao-casa {
+       width: 90%;
+   }
+
+   .descricao-casa p, h2 {
+       text-align: justify;
+   } 
+} 

@@ -86,7 +86,8 @@ nav {
 
 .btn-login {
     margin-left: 30px;
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
     border: none;
 }
