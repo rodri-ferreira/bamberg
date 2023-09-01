@@ -4,6 +4,8 @@
 @import 'detalhes-unidade.css';
 @import 'pontos-referencia.css';
 @import 'formulario.css';
+@import 'cards.css';
+@import 'footer.css';
 
 :root {
     --azul-escuro: rgb(2, 32, 47);

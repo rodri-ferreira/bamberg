@@ -1,0 +1,64 @@
+.carrossel-casas-semelhantes {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.cards {
+    width: 17%;
+    box-shadow: 0px 0px 1px 1px #00000021;
+    border-radius: 5px;
+}
+
+.cards img {
+    display: block;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.div-descricao-cards {
+    padding: 10px;
+}
+
+.div-descricao-cards h4 {
+    text-transform: uppercase;
+}
+
+.div-descricao-cards p {
+    text-align: left;
+}
+
+@media (max-width: 992px) {
+    .carrossel-casas-semelhantes {
+        width: 90%;
+    }
+
+    .cards {
+        width: 30%;
+    }
+
+    .cards:last-child, .cards:first-child {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .carrossel-casas-semelhantes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards {
+        width: 100%;
+        box-shadow: 0px 0px 1px 1px #00000021;
+        border-radius: 5px;
+    }
+
+    .cards:nth-child(4) {
+        display: none;
+    }
+}
+
+
+
