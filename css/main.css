@@ -6,6 +6,7 @@
 @import 'formulario.css';
 @import 'cards.css';
 @import 'footer.css';
+@import 'dialog.css';
 
 :root {
     --azul-escuro: rgb(2, 32, 47);

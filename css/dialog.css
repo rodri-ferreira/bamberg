@@ -1,0 +1,32 @@
+dialog {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.438);
+    top: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border: none;
+}
+
+.form-dialog {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    
+}
+
+
+@media (max-width: 992px) {
+    .form-dialog {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-dialog {
+        width: 80%;
+    }
+}
